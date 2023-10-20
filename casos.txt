@@ -1,0 +1,26 @@
+Funcionalidade: Login do saucedemo
+
+Como usuário
+Quero logar no site
+Para fazer compras
+
+Cenario - Autenticação válida:
+
+Dado que eu acesse a pagina de login
+Quando eu digitar o username "standard_user" 
+E digitar o password "secret_sauce"
+Então deve ser exibida a palavra "Products"
+
+Cenario - Usuário inexistente
+
+Dado que eu acesse a pagina de login
+Quando eu digitar o username "stand_user"
+E digitar o password "secret_sauce"
+Então deve ser exibida a mensagem "Epic Sadface: Username and password do not match any user in this service"
+
+Cenario - Usuário com senha invalida
+
+Dado que eu acesse a pagina de login
+Quando eu digitar o username "standard_user"
+E digitar o password "secret"
+Então deve ser exibida a mensagem "Epic Sadface: Username and password do not match any user in this service"
