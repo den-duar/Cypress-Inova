@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Screeshots
+# Screenshots
 cypress/screenshots/
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
