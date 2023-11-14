@@ -11,6 +11,7 @@ Funcionalidade: Login do saucedemo
 
 
         Esquema do Cenario: Logins invalidos
+        
             Quando eu digitar o <usuario>
             E a <senha>
             Então deve ser exibida a mensagem <mensagem>
@@ -28,7 +29,7 @@ Funcionalidade: Login do saucedemo
 
             Quando eu digitar o <usuario>
             E a <senha>
-            Entao deve seguir para a tela de produtos
+            Entao deve seguir para a tela que tenha o carrinho
         
         Exemplos:
 

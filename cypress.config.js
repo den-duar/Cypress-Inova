@@ -8,4 +8,5 @@ module.exports = defineConfig({
       on("file:preprocessor", cucumber());
     },
   },
+  "screenshotOnRunFailure": false
 });
