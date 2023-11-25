@@ -1,41 +1,12 @@
 #language: pt
+Funcionalidade: Login no Swag Labs
 
-Funcionalidade: Login do saucedemo
+Contexto:
+    Dado que eu acesse a página de autenticação do saucedemo
 
-    Como usuário
-    Quero logar no site
-    Para fazer compras
+    Cenario: Autenticação Válida
+        Quando eu digitar o usuário "standard_user"
+        E a senha "secret_sauce"
+        E confirmar login
+        Então deve ser exibida a logo do "Swag Labs"
 
-    Contexto: 
-        Dado que eu acesse a pagina de login
-
-
-        Esquema do Cenario: Logins invalidos
-        
-            Quando eu digitar o <usuario>
-            E a <senha>
-            Então deve ser exibida a mensagem <mensagem>
-
-        Exemplos:
-            | usuario           | senha          | mensagem                                                                    |
-            | "stand_user"      | "secret_sauce" | "Epic sadface: Username and password do not match any user in this service" |
-            | "standard_user"   | "secret"       | "Epic sadface: Username and password do not match any user in this service" |
-            | ""                | "secret_sauce" | "Epic sadface: Username is required"                                        |
-            | "stand_user"      | ""             | "Epic sadface: Password is required"                                        |
-            | "locked_out_user" | "secret_sauce" | "Epic sadface: Sorry, this user has been locked out."                       |
-
-
-        Esquema do Cenario: Logins validos
-
-            Quando eu digitar o <usuario>
-            E a <senha>
-            Entao deve seguir para a tela que tenha o carrinho
-        
-        Exemplos:
-
-            | usuario                  | senha          |
-            | "standard_user"          | "secret_sauce" |
-            | "problem_user            | "secret_sauce" |
-            | "performance_glitch_user | "secret_sauce" |
-            | "error_user"             | "secret_sauce" |
-            | "visual_user"            | "secret_sauce" |
