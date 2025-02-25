@@ -18,7 +18,7 @@ Funcionalidade: Login do saucedemo
             Então deve ser exibida a mensagem "<mensagem>"
 
         Exemplos:
-            | usuario           | senha          | mensagem                                                                    |
+            | usuario         | senha        | mensagem                                                                  |
             | stand_user      | secret_sauce | Epic sadface: Username and password do not match any user in this service |
             | standard_user   | secret       | Epic sadface: Username and password do not match any user in this service |
             |                 | secret_sauce | Epic sadface: Username is required                                        |
@@ -34,10 +34,9 @@ Funcionalidade: Login do saucedemo
             Entao deve seguir para a tela que tenha o carrinho
         
         Exemplos:
-
-            | usuario                  | senha          |
-            | standard_user          | secret_sauce |
+            | usuario                 | senha        |
+            | standard_user           | secret_sauce |
             | problem_user            | secret_sauce |
             | performance_glitch_user | secret_sauce |
-            | error_user             | secret_sauce |
-            | visual_user            | secret_sauce |
+            | error_user              | secret_sauce |
+            | visual_user             | secret_sauce |
